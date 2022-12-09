@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
- * main - starting of execution
+ * main - Begin of execution
  *
  * Return: 0 if success
  */
