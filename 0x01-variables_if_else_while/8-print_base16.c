@@ -8,19 +8,19 @@
  */
 int main(void)
 {
-	int n, hexnumber = 48;
+	int n,  hexNumber= 48;
 	char al;
 
 	for (n = 0; n < 10; n++)
 	{
-		putchar(n + hexnumber);
+		putchar(n + hexNumber);
 	}
-	
+
 	for (al = 'a'; al <= 'f'; al++)
 	{
-	    putchar(al);
+		putchar(al);
 	}
-	
+
 	putchar('\n');
 
 	return (0);
