@@ -8,14 +8,15 @@
  */
 int main(void)
 {
-	int n, asnumber = 48;
+	int n, hexnumber = 48;
+	char al;
 
 	for (n = 0; n < 10; n++)
 	{
-		putchar(n + asnumber);
+		putchar(n + hexnumber);
 	}
 	
-	for (char al = 'a'; al <= 'f'; al++)
+	for (al = 'a'; al <= 'f'; al++)
 	{
 	    putchar(al);
 	}
