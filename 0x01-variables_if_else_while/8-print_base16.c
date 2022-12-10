@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int n,  hexNumber= 48;
+	int n,  hexNumber = 48;
 	char al;
 
 	for (n = 0; n < 10; n++)
