@@ -10,11 +10,11 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 100; n++)
+	for (n = 1; n < 90; n++)
 	{
 		printf("%02d",n);
 
-		if (n < 100)
+		if (n < 89)
 		{
 			putchar(',');
 			putchar(' ');
