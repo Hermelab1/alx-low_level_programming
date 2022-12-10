@@ -2,21 +2,28 @@
 #include <stdlib.h>
 
 /**
- * main - Begin of execution
+ * main - Starting of execution
  *
  * Return: 0 if success
  */
 int main(void)
 {
-	char al;
-	for (al = 'a'; al <= 'z'; al++)
+	char c = 'a';
+
+	while (c <= 'z')
 	{
-	    putchar(al);
+		putchar(c);
+		c++;
 	}
-	for (al = 'A'; al <= 'Z'; al++)
+
+	c = 'A';
+
+	while (c <= 'Z')
 	{
-	    putchar(al);
+		putchar(c);
+		c++;
 	}
 	printf("\n");
+
 	return (0);
 }
