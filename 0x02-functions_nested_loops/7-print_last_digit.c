@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * last_digit - that computes the last digits of the number
  *
