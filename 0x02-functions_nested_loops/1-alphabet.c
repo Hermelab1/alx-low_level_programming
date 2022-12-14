@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Print - all alphabet character
+ * print_alphabet: print all alphabet character
  *
  * Return: void
  */
