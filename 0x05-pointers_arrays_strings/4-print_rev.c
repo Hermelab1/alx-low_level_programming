@@ -21,7 +21,7 @@ int _strlen(char *s)
 }
 
 /**
- * pint_rev - to print a string in the revers
+ * print_rev - to print a string in the revers
  *
  * @s: character pointer
  */
