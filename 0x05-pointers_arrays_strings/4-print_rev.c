@@ -3,9 +3,9 @@
 /**
  * _strlen - to print the length of string
  *
- * @str: string pointer
+ * @s: string pointer
  *
- * return: string size
+ * Return: string size
  */
 int _strlen(char *s)
 {
@@ -21,7 +21,7 @@ int _strlen(char *s)
 }
 
 /**
- * pint_revers - to print a string in the revers
+ * pint_rev - to print a string in the revers
  *
  * @s: character pointer
  */
