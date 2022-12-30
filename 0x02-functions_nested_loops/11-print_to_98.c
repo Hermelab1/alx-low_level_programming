@@ -16,9 +16,7 @@ void displayNumber(int number)
 		_putchar('-');
 		number *= -1;
 	}
-	
 	lastDigit = number % 10;
-	
 	if (number >= 10)
 	{
 		number /= 10;
@@ -43,7 +41,6 @@ void print_to_98(int n)
 		for (number = n; number >= 98; number--)
 		{
 			displayNumber(number);
-
 			if (number > 98)
 			{
 				_putchar(',');
@@ -57,7 +54,6 @@ void print_to_98(int n)
 		for (number = n; number <= 98; number++)
 		{
 			displayNumber(number);
-			
 			if (number < 98)
 			{
 				_putchar(',');
