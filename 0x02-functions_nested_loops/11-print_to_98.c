@@ -13,7 +13,7 @@ void displayNumber(int number)
 
  if (number < 0)
  {
-  putchar('-');
+  _putchar('-');
   number *= -1;
  }
 
@@ -25,7 +25,7 @@ void displayNumber(int number)
   displayNumber(number);
  }
 
- putchar(lastDigit + '0');
+ _putchar(lastDigit + '0');
 }
 
 /**
@@ -47,11 +47,11 @@ void print_to_98(int n)
 
    if (number > 98)
    {
-    putchar(',');
-    putchar(' ');
+    _putchar(',');
+    _putchar(' ');
    }
   }
-  putchar('\n');
+  _putchar('\n');
  }
  else if (n < 98)
  {
@@ -61,15 +61,15 @@ void print_to_98(int n)
 
    if (number < 98)
    {
-    putchar(',');
-    putchar(' ');
+    _putchar(',');
+    _putchar(' ');
    }
   }
-  putchar('\n');
+  _putchar('\n');
  }
  else if (n == 98)
  {
   displayNumber(n);
-  putchar('\n');
+  _putchar('\n');
  }
 }
