@@ -10,7 +10,6 @@
 void displayNumber(int number)
 {
 	int lastDigit;
-	
 	if (number < 0)
 	{
 		_putchar('-');
@@ -35,7 +34,6 @@ void displayNumber(int number)
 void print_to_98(int n)
 {
 	int number;
-	
 	if (n > 98)
 	{
 		for (number = n; number >= 98; number--)
