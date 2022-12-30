@@ -1,22 +1,75 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * print_to_98: to print from n number to 98
+ * displayNumber - display a number
  *
- * @n: the number that given
+ * @number: number to show
+ *
+ * Return: int - result of addition
+ */
+void displayNumber(int number)
+{
+ int lastDigit;
+
+ if (number < 0)
+ {
+  putchar('-');
+  number *= -1;
+ }
+
+ lastDigit = number % 10;
+
+ if (number >= 10)
+ {
+  number /= 10;
+  displayNumber(number);
+ }
+
+ putchar(lastDigit + '0');
+}
+
+/**
+ * print_to_98 - prints all natural numbers from n to 98
+ *
+ * @n: number to begin the count
+ *
+ * Return: void
  */
 void print_to_98(int n)
 {
-	for (; n <= 98; n++)
-	{
-		printf("%d", n);
-		putchar(',');
-		putchar(' ');
-	}
-	for (; n >= 98; n--)
-	{
-		printf("%d", n);
-		putchar(',');
-		putchar(' ');
-	}
+ int number;
+
+ if (n > 98)
+ {
+  for (number = n; number >= 98; number--)
+  {
+   displayNumber(number);
+
+   if (number > 98)
+   {
+    putchar(',');
+    putchar(' ');
+   }
+  }
+  putchar('\n');
+ }
+ else if (n < 98)
+ {
+  for (number = n; number <= 98; number++)
+  {
+   displayNumber(number);
+
+   if (number < 98)
+   {
+    putchar(',');
+    putchar(' ');
+   }
+  }
+  putchar('\n');
+ }
+ else if (n == 98)
+ {
+  displayNumber(n);
+  putchar('\n');
+ }
 }
