@@ -9,23 +9,22 @@
  */
 void displayNumber(int number)
 {
- int lastDigit;
-
- if (number < 0)
- {
-  _putchar('-');
-  number *= -1;
- }
-
- lastDigit = number % 10;
-
- if (number >= 10)
- {
-  number /= 10;
-  displayNumber(number);
- }
-
- _putchar(lastDigit + '0');
+	int lastDigit;
+	
+	if (number < 0)
+	{
+		_putchar('-');
+		number *= -1;
+	}
+	
+	lastDigit = number % 10;
+	
+	if (number >= 10)
+	{
+		number /= 10;
+		displayNumber(number);
+	}
+	_putchar(lastDigit + '0');
 }
 
 /**
@@ -37,39 +36,39 @@ void displayNumber(int number)
  */
 void print_to_98(int n)
 {
- int number;
+	int number;
+	
+	if (n > 98)
+	{
+		for (number = n; number >= 98; number--)
+		{
+			displayNumber(number);
 
- if (n > 98)
- {
-  for (number = n; number >= 98; number--)
-  {
-   displayNumber(number);
-
-   if (number > 98)
-   {
-    _putchar(',');
-    _putchar(' ');
-   }
-  }
-  _putchar('\n');
- }
- else if (n < 98)
- {
-  for (number = n; number <= 98; number++)
-  {
-   displayNumber(number);
-
-   if (number < 98)
-   {
-    _putchar(',');
-    _putchar(' ');
-   }
-  }
-  _putchar('\n');
- }
- else if (n == 98)
- {
-  displayNumber(n);
-  _putchar('\n');
- }
+			if (number > 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+	}
+	else if (n < 98)
+	{
+		for (number = n; number <= 98; number++)
+		{
+			displayNumber(number);
+			
+			if (number < 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+	}
+	else if (n == 98)
+	{
+		displayNumber(n);
+		_putchar('\n');
+	}
 }
