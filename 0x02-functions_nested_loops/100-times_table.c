@@ -9,13 +9,13 @@
 void print_times_table(int n)
 {
 	int i, j, number;
-	
+
 	for (i = 0; i <= n; ++i)
 	{
-		for(j = 0; j <= n; j++)
+		for (j = 0; j <= n; j++)
 		{
 			number = j * i;
-			
+
 			if (j > 0 && number >= 0 && number < 10)
 			{
 				_putchar(' ');
@@ -24,7 +24,7 @@ void print_times_table(int n)
 			{
 				_putchar(' ');
 			}
-			printf("%d", number);
+			printf("%i", number);
 			if (j < n)
 			{
 				_putchar(',');
