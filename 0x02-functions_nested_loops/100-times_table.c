@@ -1,31 +1,58 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * Print_times_table- is used to print n number of time table
+ * displayNumber - display a number
  *
- * @n: numbers for time table
+ * @number: number to show
+ *
+ * Return: int - result of addition
  */
-void print_times_table(int n)
+void displayNumber(int number)
 {
-	int i, j, number;
+	int lastDigit;
 
-	for (i = 0; i <= n; ++i)
+	if (number < 0)
 	{
-		for (j = 0; j <= n; j++)
-		{
-			number = j * i;
+		_putchar('-');
+		number *= -1;
+	}
 
-			if (j > 0 && number >= 0 && number < 10)
+	lastDigit = number % 10;
+
+	if (number >= 10)
+	{
+		number /= 10;
+		displayNumber(number);
+	}
+
+	_putchar(lastDigit + '0');
+}
+
+/**
+ * squareTable - display a square table
+ *
+ * @n: square number
+ */
+void squareTable(int n)
+{
+	int column, row, number;
+
+	for (row = 0; row <= n; row++)
+	{
+		for (column = 0; column <= n; column++)
+		{
+			number = column * row;
+
+			if (column > 0 && number >= 0 && number < 10)
 			{
 				_putchar(' ');
 			}
-			if (j > 0 && number >= 0 && number < 100)
+			if (column > 0 && number >= 0 && number < 100)
 			{
 				_putchar(' ');
 			}
-			printf("%i", number);
-			if (j < n)
+			displayNumber(number);
+			if (column < n)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -33,5 +60,18 @@ void print_times_table(int n)
 		}
 
 		_putchar('\n');
+	}
+}
+
+/**
+ * print_times_table - display n square table
+ *
+ * @n: square table number
+ */
+void print_times_table(int n)
+{
+	if (n <= 15 && n >= 0)
+	{
+		squareTable(n);
 	}
 }
