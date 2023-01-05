@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_numbers - to print numbers
  *
