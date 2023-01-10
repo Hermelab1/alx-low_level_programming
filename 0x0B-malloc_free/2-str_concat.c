@@ -6,6 +6,8 @@
  * _length_recursion - to get the length of the cahracter
  *
  * @s: character string
+ * 
+ * Return: string length
  */
 int _length_recursion(char *s)
 {
