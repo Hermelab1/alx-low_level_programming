@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - to print for the multiples of three prints fizz and for multiples of five prints buzz
+ * main - check the code for Holberton School students.
  *
- * Return: always 0
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -12,25 +12,16 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-		{
 			printf("FizzBuzz");
-		}
 		else if (i % 3 == 0)
-		{
-			printf("Fuzz");
-		}
+			printf("Fizz");
 		else if (i % 5 == 0)
-		{
 			printf("Buzz");
-		}
 		else
-		{
 			printf("%d", i);
-		}
+
 		if (i < 100)
-		{
 			printf(" ");
-		}
 	}
 
 	printf("\n");
