@@ -1,9 +1,11 @@
+#include "main.h"
+
 /**
- * _isdigit- to check the character is digit or not
+ * _isdigit - to check the character is digit or not
  *
  * @c: the character is given
  *
- * retutn: 0 is succsuss
+ * Retutn: 0 is succsuss
  */
 int _isdigit(int c)
 {
