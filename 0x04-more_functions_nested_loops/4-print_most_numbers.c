@@ -1,20 +1,18 @@
 #include "main.h"
 
 /**
- * print_most_numbers - to print the numbers from 0 to 9 followed by new line except 2 and 4
+ * print_most_numbers - prints the numbers, from 0 to 9.
  *
- * Return: always 0
+ * Return: Always 0.
  */
 void print_most_numbers(void)
 {
-	int n;
+	int number;
 
-	for (n = 0; n < 10; n++)
+	for (number = 0; number <= 9; number++)
 	{
-		if (n != 2 && n != 4)
-		{
-			_putchar(n + '0');
-		}
+		if (number != 2 && number != 4)
+			_putchar(number + '0');
 	}
 
 	_putchar('\n');
