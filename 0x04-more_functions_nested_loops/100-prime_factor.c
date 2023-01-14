@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,18 +5,13 @@
  *
  * @nprime: prime number
  *
- * Ruturn: lprime
+ * Return: iprime
  */
-int main(viod)
-{
-	printf("%lu\n", prime(612852475143));
-	
-	return (0);
-}
 int prime(long int nprime)
 {
 	long int n;
-	int iprime, prime = 2;
+	int iprime;
+	int prime = 2;
 
 	n = nprime;
 	while (n != 0)
@@ -39,3 +33,14 @@ int prime(long int nprime)
 	return (iprime);
 }
 
+/**
+ * main - to check the prime factore function
+ *
+ * Return: always 0
+ */
+int main (void)
+{
+	printf("%lu\n", prime(612852475143));
+
+	return (0);
+}
