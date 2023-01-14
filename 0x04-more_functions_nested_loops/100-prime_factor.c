@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdto.h>
+#include <stdio.h>
 
 /**
  * prime - a function is used to calculate prime factors
