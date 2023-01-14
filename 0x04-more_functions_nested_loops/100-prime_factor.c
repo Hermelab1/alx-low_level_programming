@@ -5,21 +5,23 @@
  *
  * @nprime: prime number
  *
- * Return: iprime
+ * Return: largest prime factor (iprime)
  */
-int prime(long int nprime)
+long int prime(long int nprime)
 {
 	long int n;
 	int iprime;
 	int prime = 2;
 
 	n = nprime;
+
 	while (n != 0)
 	{
 		if (n % prime == 0)
 		{
 			iprime = n;
 			n /= prime;
+
 			if (n == 1)
 			{
 				break;
