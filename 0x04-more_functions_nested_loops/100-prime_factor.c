@@ -32,6 +32,7 @@ long int prime(long int nprime)
 			prime += 1;
 		}
 	}
+
 	return (iprime);
 }
 
