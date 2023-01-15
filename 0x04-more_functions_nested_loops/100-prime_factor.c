@@ -11,8 +11,9 @@ long int prime(long int nprime)
 {
 	long int n;
 	int iprime;
-	int prime = 2;
+	int prime;
 
+	prime = 2;
 	n = nprime;
 
 	while (n != 0)
@@ -21,7 +22,6 @@ long int prime(long int nprime)
 		{
 			iprime = n;
 			n /= prime;
-
 			if (n == 1)
 			{
 				break;
