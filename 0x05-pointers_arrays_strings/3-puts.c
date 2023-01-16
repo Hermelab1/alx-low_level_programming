@@ -7,7 +7,7 @@
  */
 void _puts(char *str)
 {
-	int *s = str;
+	char *s = str;
 
 	while (*s != '\0')
 	{
