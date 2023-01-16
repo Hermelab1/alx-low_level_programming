@@ -9,15 +9,14 @@
  */
 int _strlen(char *s)
 {
-	int size = 0;
+	int len  = 0;
 
 	while (*s != '\0')
 	{
-		size++;
+		len++;
 		s++;
 	}
-
-	return (size);
+	return (len);
 }
 
 /**
@@ -25,15 +24,14 @@ int _strlen(char *s)
  *
  * @s: character pointer
  */
-void print_rev(char *s)
+void print_rev(char *str)
 {
-	int len = _strlen(s) - 1;
+	int lstring = _strlen(str) - 1;
 
-	while (len >= 0)
+	while (lstring >= 0)
 	{
-		_putchar(s[len]);
-		len--;
+		_putchar(str[lstring]);
+		lstring--;
 	}
-
 	_putchar('\n');
 }
