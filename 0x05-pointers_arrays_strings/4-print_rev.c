@@ -22,7 +22,7 @@ int _strlen(char *s)
 /**
  * print_rev - to print a string in the revers
  *
- * @s: character pointer
+ * @str: character pointer
  */
 void print_rev(char *str)
 {
