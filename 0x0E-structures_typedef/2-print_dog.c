@@ -1,10 +1,11 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * print_dog - function that prints the structure
  *
- * @d: data
+ * @d: data to print
  */
 void print_dog(struct dog *d)
 {
