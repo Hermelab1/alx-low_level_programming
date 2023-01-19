@@ -74,7 +74,8 @@ int addChar(char c1, char c2)
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int cLoop, rcLoop, result, next = 0;
-	char temp[size_r], c1, c2;
+	int temp[size_r];
+	char c1, c2;
 
 	for (cLoop = 0; cLoop < size_r; cLoop++)
 	{
