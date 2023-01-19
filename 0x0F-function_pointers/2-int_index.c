@@ -13,7 +13,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int cLoop;
 
-	if (sie <= 0 || !array || !cmp)
+	if (size <= 0 || !array || !cmp)
 		return (-1);
 
 	for (cLoop = 0; cLoop < size; cLoop++)
@@ -21,6 +21,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(array[cLoop]))
 			return (cLoop);
 	}
-	
+
 	return (-1);
 }
