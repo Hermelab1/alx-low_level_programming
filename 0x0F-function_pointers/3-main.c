@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -15,7 +16,7 @@
 int main(int argc, char *argv[])
 {
 	int (*func)(int, int), result, num1, num2;
-	
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -40,15 +41,14 @@ int main(int argc, char *argv[])
 		case '/':
 		case '*':
 		case '%':
-			break;
+		break;
 		default:
 			printf("Error\n");
 			exit(99);
-			break;
+		break;
 	}
 	func = get_op_func(argv[2]);
 	result = func(num1, num2);
 	printf("%d\n", result);
-	
 	return (0);
 }
