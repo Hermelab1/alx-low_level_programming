@@ -3,17 +3,17 @@
 #include <stdlib.h>
 
 /**
+ * free_list - to free the list
  *
- *@head: list pointer
+ * @head: list pointer
  */
 void free_list(list_t *head)
 {
-	list_t *temp;
-	
-	while (head != NULL)
+	if (head == NULL)
 	{
-		temp = head;
-		head = head->next;
-		free(temp);
+		return;
 	}
+	free_list(head->next);
+	free(head->str);
+	free(head);
 }
