@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 /**
  * create_file - a function that creates a file
@@ -12,7 +17,7 @@ int create_file(const char *filename, char *text_content)
 	int file_descriptor;
 	int result;
 	int permission = S_IRUSR | S_IWUSR;
-	
+
 	if (!filename)
 	{
 		return (-1);
