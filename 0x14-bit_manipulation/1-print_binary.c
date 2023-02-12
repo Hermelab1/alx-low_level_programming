@@ -8,25 +8,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1;
-
-	if (n == 0)
+	if (n > 1)
 	{
-		printf("0");
+		print_binary(n >> 1);
 	}
-	else
-	{
-		while (n > 0)
-		{
-			if (n & mask)
-			{
-				printf("1");
-			}
-			else
-			{
-				printf("0");
-			}
-			n >>= 1;
-		}
-	}
+	_putchar((n & 1) + '0');
 }
